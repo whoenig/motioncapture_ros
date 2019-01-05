@@ -1,0 +1,3 @@
+[submodule "externalDependencies/libmotioncapture"]
+	path = externalDependencies/libmotioncapture
+	url = https://github.com/USC-ACTLab/libmotioncapture.git

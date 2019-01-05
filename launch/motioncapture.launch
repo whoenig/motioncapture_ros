@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="motioncapture" type="node" name="motioncapture" output="screen" >
+    <rosparam>
+      broadcast_tf: true
+      publish_pointcloud: true
+      # tracking
+      motion_capture_type: "vrpn" # one of vicon,optitrack,qualisys,vrpn
+      object_tracking_type: "motionCapture" # one of motionCapture,libobjecttracker
+      vicon_host_name: "vicon"
+      # optitrack_local_ip: "localhost"
+      # optitrack_server_ip: "optitrack"
+      # qualisys_host_name: "10.0.5.219"
+      # qualisys_base_port: 22222
+      vrpn_host_name: "vicon"
+    </rosparam>
+  </node>
+</launch>
